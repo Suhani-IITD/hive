@@ -229,3 +229,18 @@ Expected impact:
 - fewer unnecessary clarification turns
 - lower token/tool cost
 - more predictable production behavior for repeat workflows
+
+###  HoneyComb
+
+#### 1. "Queen Bee" Traceability 
+- **Feedback:** Exposing the "Evolution Log" (the diffs between agent.json v1 and v2) more clearly in the HoneyComb UI. This allows contributors to see *how* the framework is fixing our code, which is a massive learning tool for the community.
+
+#### 2. Skill Registry Standardization
+Currently, the `hive-skill-registry` is evolving quickly.
+- **Feedback:** To scale to thousands of contributors, we should implement a "Skill Compatibility Matrix." For example, ensuring a `web-search` skill works across both `GPT-4o` and `Claude-3.5` powered agents without prompt-leakage or formatting errors.
+
+#### 3. Real-Time Market Feedback for Devs
+- **Feedback:** It would be incredible to have a GitHub Action that reports: *"Your PR to the 'Legal-Research' skill is projected to lower the $ATT (Attorney) Defensibility Score by 0.2."* This tightly couples the act of coding with the market reality of HoneyComb.
+
+#### 4. "Headless" vs "GCU" Optimization
+- **Feedback:** I noticed the framework supports both GCU (Graphical Control Unit - looking at screens) and Headless (API-first) nodes. We should encourage contributors to build "Headless" skills first, as they are more robust and less "fragile" than UI-based automation, leading to more stable market signals.
